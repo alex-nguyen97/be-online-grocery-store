@@ -1,19 +1,26 @@
 <?php
 
 namespace Database\Seeders;
+
+use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class UsersTableSeeder extends Seeder
 {
-    public function run()
+    public function run(): void
     {
-        DB::table('users')->insert([
-            ['name' => 'Admin', 'email' => 'admin@admin.com', 'password' => Hash::make('password'), 'mobile' => '1234567890', 'address' => 'Admin Street, City', 'role' => 'admin'],
-            ['name' => 'User1', 'email' => 'user1@example.com', 'password' => Hash::make('password'), 'mobile' => '1111111111', 'address' => 'User1 Street, City', 'role' => 'customer'],
-            ['name' => 'User2', 'email' => 'user2@example.com', 'password' => Hash::make('password'), 'mobile' => '2222222222', 'address' => 'User2 Street, City', 'role' => 'customer'],
-            ['name' => 'User3', 'email' => 'user3@example.com', 'password' => Hash::make('password'), 'mobile' => '3333333333', 'address' => 'User3 Street, City', 'role' => 'customer']
+        User::create([
+            'name' => 'Admin User',
+            'email' => 'admin@example.com',
+            'password' => Hash::make('password'),
+            'mobile' => '0412345678',
+            'address' => '123 Admin St',
+            'avatar' => null,
+            'role' => 'admin',
         ]);
+
+        User::factory(10)->create(); // Optional: Create more with a factory
     }
 }

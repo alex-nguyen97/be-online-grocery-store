@@ -9,7 +9,7 @@ class CreateOrdersTable extends Migration
     public function up()
     {
         Schema::create('orders', function (Blueprint $table) {
-            $table->id('order_id');
+            $table->id('order_id')->un;
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('user_id')->on('users');
             $table->decimal('total_price', 10, 2);
