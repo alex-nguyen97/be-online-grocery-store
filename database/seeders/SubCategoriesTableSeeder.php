@@ -15,27 +15,27 @@ class SubCategoriesTableSeeder extends Seeder
     {
         SubCategory::insert([
             // Vegetables (1)
-            ['sub_category_name' => 'Leafy Greens', 'category_id' => 1],
-            ['sub_category_name' => 'Root Vegetables', 'category_id' => 1],
-            ['sub_category_name' => 'Cruciferous', 'category_id' => 1],
-            ['sub_category_name' => 'Mushrooms', 'category_id' => 1],
+            ['sub_category_name' => 'Organic Vegetables', 'category_id' => 1],
+            ['sub_category_name' => 'Prepacked Vegetables', 'category_id' => 1],
+            ['sub_category_name' => 'Lettuce, Kale & Leafy', 'category_id' => 1],
+            ['sub_category_name' => 'Broccoli & Cauliflower', 'category_id' => 1],
 
             // Fruits (2)
-            ['sub_category_name' => 'Citrus', 'category_id' => 2],
-            ['sub_category_name' => 'Berries', 'category_id' => 2],
-            ['sub_category_name' => 'Tropical Fruits', 'category_id' => 2],
-            ['sub_category_name' => 'Stone Fruits', 'category_id' => 2],
+            ['sub_category_name' => 'Organic Fruits', 'category_id' => 2],
+            ['sub_category_name' => 'Bananas', 'category_id' => 2],
+            ['sub_category_name' => 'Berries & Cherries', 'category_id' => 2],
+            ['sub_category_name' => 'Citrus Fruits', 'category_id' => 2],
 
             // Meats (3)
-            ['sub_category_name' => 'Beef', 'category_id' => 3],
+            ['sub_category_name' => 'Beef & Veal', 'category_id' => 3],
             ['sub_category_name' => 'Pork', 'category_id' => 3],
-            ['sub_category_name' => 'Poultry', 'category_id' => 3],
+            ['sub_category_name' => 'Mince', 'category_id' => 3],
             ['sub_category_name' => 'Lamb', 'category_id' => 3],
 
             // Fishes (4)
-            ['sub_category_name' => 'Saltwater Fish', 'category_id' => 4],
-            ['sub_category_name' => 'Freshwater Fish', 'category_id' => 4],
-            ['sub_category_name' => 'Shellfish', 'category_id' => 4],
+            ['sub_category_name' => 'Salmon', 'category_id' => 4],
+            ['sub_category_name' => 'Prawns', 'category_id' => 4],
+            ['sub_category_name' => 'Crabs & Lobster', 'category_id' => 4],
         ]);
     }
 }

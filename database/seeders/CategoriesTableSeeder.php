@@ -14,7 +14,7 @@ class CategoriesTableSeeder extends Seeder
             ['category_id' => 1, 'category_name' => 'Vegetables', 'image' => 'vegetables.jpg'],
             ['category_id' => 2, 'category_name' => 'Fruits', 'image' => 'fruits.jpg'],
             ['category_id' => 3, 'category_name' => 'Meats', 'image' => 'meats.jpg'],
-            ['category_id' => 4, 'category_name' => 'Fishes', 'image' => 'fishes.jpg'],
+            ['category_id' => 4, 'category_name' => 'Fishes', 'image' => 'fish.jpg'],
         ]);
     }
 }
