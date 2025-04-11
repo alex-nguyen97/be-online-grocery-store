@@ -16,9 +16,9 @@ class SubCategoriesTableSeeder extends Seeder
         SubCategory::insert([
             // Vegetables (1)
             ['sub_category_name' => 'Organic Vegetables', 'category_id' => 1],
-            ['sub_category_name' => 'Prepacked Vegetables', 'category_id' => 1],
-            ['sub_category_name' => 'Lettuce, Kale & Leafy', 'category_id' => 1],
-            ['sub_category_name' => 'Broccoli & Cauliflower', 'category_id' => 1],
+            ['sub_category_name' => 'Onions', 'category_id' => 1],
+            ['sub_category_name' => 'Lettuce, Cucumber', 'category_id' => 1],
+            ['sub_category_name' => 'Broccoli & Carrot', 'category_id' => 1],
 
             // Fruits (2)
             ['sub_category_name' => 'Organic Fruits', 'category_id' => 2],
@@ -35,7 +35,7 @@ class SubCategoriesTableSeeder extends Seeder
             // Fishes (4)
             ['sub_category_name' => 'Salmon', 'category_id' => 4],
             ['sub_category_name' => 'Prawns', 'category_id' => 4],
-            ['sub_category_name' => 'Crabs & Lobster', 'category_id' => 4],
+            ['sub_category_name' => 'Other fishes', 'category_id' => 4],
         ]);
     }
 }

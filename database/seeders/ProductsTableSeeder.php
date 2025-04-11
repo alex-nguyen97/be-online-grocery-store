@@ -207,7 +207,7 @@ class ProductsTableSeeder extends Seeder
                 'name' => 'Fresh Tomato Each',
                 'price' => 0.87,
                 'image' => 'https://assets.woolworths.com.au/images/1005/134034.jpg?impolicy=wowsmkqiema&w=260&h=260',
-                'stock' => 10,
+                'stock' => 4,
                 'description' => null,
                 'sub_category_id' => 1 // Organic Vegetables
             ],
@@ -215,7 +215,7 @@ class ProductsTableSeeder extends Seeder
                 'name' => 'Avocado Shepard Each',
                 'price' => 2.00,
                 'image' => 'https://assets.woolworths.com.au/images/1005/186910.jpg?impolicy=wowsmkqiema&w=260&h=260',
-                'stock' => 10,
+                'stock' => 1,
                 'description' => null,
                 'sub_category_id' => 1 // Organic Vegetables
             ],
@@ -223,7 +223,7 @@ class ProductsTableSeeder extends Seeder
                 'name' => 'Potato White Washed Each',
                 'price' => 0.85,
                 'image' => 'https://assets.woolworths.com.au/images/1005/208895.jpg?impolicy=wowsmkqiema&w=260&h=260',
-                'stock' => 10,
+                'stock' => 2,
                 'description' => null,
                 'sub_category_id' => 2 // Prepacked Vegetables
             ],
@@ -231,7 +231,7 @@ class ProductsTableSeeder extends Seeder
                 'name' => 'Onion Brown Each',
                 'price' => 0.59,
                 'image' => 'https://assets.woolworths.com.au/images/1005/144329.jpg?impolicy=wowsmkqiema&w=260&h=260',
-                'stock' => 10,
+                'stock' => 0,
                 'description' => null,
                 'sub_category_id' => 2 // Prepacked Vegetables
             ],
