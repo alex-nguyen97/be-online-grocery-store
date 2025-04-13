@@ -94,11 +94,14 @@ class OrderController extends Controller
                     'product_id' => $products['product_id'],
                     'quantity' => $products['quantity'],
                 ]);
+
+                $updatedProducts[] = $product->fresh();
             }
 
             return [
                 'order' => $order,
                 'delivery' => $delivery,
+                'products' => $updatedProducts,
             ];
         });
 
