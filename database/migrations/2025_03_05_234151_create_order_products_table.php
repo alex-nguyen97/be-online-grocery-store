@@ -13,7 +13,6 @@ class CreateOrderProductsTable extends Migration
             $table->unsignedBigInteger('order_id');
             $table->unsignedBigInteger('product_id');
             $table->integer('quantity');
-            $table->decimal('unit_price', 10, 2);
             $table->foreign('order_id')->references('order_id')->on('orders')->onDelete('cascade');
             $table->foreign('product_id')->references('product_id')->on('products');
             $table->timestamps();

@@ -16,7 +16,7 @@ class ProductController extends Controller
     public function index()
     {
         // Retrieve products with their associated subcategories and categories
-        $products = Product::get();
+        $products = Product::orderBy('name', 'asc')->get();
 
         // Return products as a JSON response
         return response()->json($products);
@@ -59,16 +59,16 @@ class ProductController extends Controller
             if ($subcategories->isEmpty()) {
                 return response()->json(['message' => 'No subcategories found for this category'], 404);
             }
-            $products = Product::whereIn('sub_category_id', $subcategories->pluck('sub_category_id'))->get();
+            $products = Product::whereIn('sub_category_id', $subcategories->pluck('sub_category_id'))->orderBy('name', 'asc')->get();
         }
 
         // Fetch products by sub_category if sub_category is provided
         else if ($subCategoryId) {
-            $products = Product::where('sub_category_id', $subCategoryId)->get();
+            $products = Product::where('sub_category_id', $subCategoryId)->orderBy('name', 'asc')->get();
         }
 
         if ($searchName) {
-            $products = Product::whereRaw('LOWER(name) LIKE ?', ['%' . strtolower($searchName) . '%'])->get();
+            $products = Product::whereRaw('LOWER(name) LIKE ?', ['%' . strtolower($searchName) . '%'])->orderBy('name', 'asc')->get();
         }
 
         // Return response if no products are found

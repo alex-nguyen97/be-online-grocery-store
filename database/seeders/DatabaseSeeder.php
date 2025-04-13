@@ -13,9 +13,6 @@ class DatabaseSeeder extends Seeder
             CategoriesTableSeeder::class,
             SubCategoriesTableSeeder::class,
             ProductsTableSeeder::class,
-            OrdersTableSeeder::class,
-            OrderProductsTableSeeder::class,
-            DeliveryDetailsTableSeeder::class,
         ]);
     }
 }
